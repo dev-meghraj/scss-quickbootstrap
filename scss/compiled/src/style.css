@@ -1,0 +1,184 @@
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+  Mixins available:
+    -   background-gradient     - arguments: Start Color: #3C3C3C, End Color: #999999
+    -   background-size         - arguments: Width: 100%, Height: 100%
+    -   border-radius           - arguments: Radius: 5px
+    -   border-radius-separate  - arguments: Top Left: 5px, Top Left: 5px, Bottom Left: 5px, Bottom Right: 5px
+    -   box                     - arguments: Orientation: horizontal, Pack: center, Align: center
+    -   box-rgba                - arguments: R: 60, G: 3, B: 12, Opacity: 0.23, Color: #3C3C3C
+    -   box-shadow              - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   box-sizing              - arguments: Type: border-box
+    -   columns                 - arguments: Count: 3, Gap: 10
+    -   double-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Radius: 0
+    -   flex                    - arguments: Value: 1
+    -   flip                    - arguments: ScaleX: -1
+    -   font-face               - arguments: Font Family: myFont, Eot File Src: myFont.eot, Woff File Src: myFont.woff, Ttf File Src: myFont.ttf
+    -   opacity                 - arguments: Opacity: 0.5
+    -   outline radius          - arguments: Radius: 5px
+    -   resize                  - arguments: Direction: both
+    -   rotate                  - arguments: Degree: 0, M11: 0, M12: 0, M21: 0, M22: 0
+    CSS Matrix Rotation Calculator http://www.boogdesign.com/examples/transforms/matrix-calculator.html
+    -   text-shadow             - arguments: X: 2px, Y: 2px, Blur: 5px, Color: rgba(0,0,0,.4)
+    -   transform               - arguments: Parameters: null
+    -   transition              - arguments: What: all, Length: 1s, Easing: ease-in-out
+    -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
+
+------------------------------------------------------------- */
+/* BACKGROUND GRADIENT */
+/* BACKGROUND SIZE */
+/* BOX */
+/* BOX RGBA */
+/* COLUMNS */
+/* DOUBLE BORDERS */
+/* FLEX */
+/* FLIP */
+/* FONT FACE */
+/* OPACITY */
+/* OUTLINE RADIUS */
+/* RESIZE */
+/* ROTATE*/
+/* TEXT SHADOW */
+/* TRANSFORM  */
+/* TRANSITION */
+/* TRIPLE BORDERS */
+/*Commom Shorthands*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/lib\.scss}line{font-family:\0000313}}
+.FL, .FLH {
+  float: left;
+  display: inline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/lib\.scss}line{font-family:\0000317}}
+.FR, .FRH {
+  float: right;
+  display: inline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/lib\.scss}line{font-family:\0000321}}
+.FLH, .FRH {
+  height: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/lib\.scss}line{font-family:\0000325}}
+.center {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/lib\.scss}line{font-family:\0000329}}
+.left {
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/lib\.scss}line{font-family:\0000332}}
+.right {
+  text-align: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/lib\.scss}line{font-family:\0000337}}
+.vCenter,
+.vBottom {
+  display: table-cell;
+  height: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/lib\.scss}line{font-family:\0000341}}
+.vCenter {
+  vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/lib\.scss}line{font-family:\0000344}}
+.vBottom {
+  vertical-align: bottom; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/lib\.scss}line{font-family:\0000348}}
+.fWidth {
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/lib\.scss}line{font-family:\0000352}}
+.iWidth {
+  width: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/lib\.scss}line{font-family:\0000356}}
+.iHeight {
+  height: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/lib\.scss}line{font-family:\0000360}}
+.none {
+  display: none !important; }
+
+/* Resetting All To Defaults*/
+@media all {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/reset\.scss}line{font-family:\000035}}
+  * {
+    margin: 0;
+    padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/reset\.scss}line{font-family:\000037}}
+  * html body * {
+    overflow: visible; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/reset\.scss}line{font-family:\000039}}
+  html * {
+    font-size: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/reset\.scss}line{font-family:\0000311}}
+  body {
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    font-size: 100%;
+    background: #fff;
+    color: #000;
+    text-align: left;
+    /* LTR */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/reset\.scss}line{font-family:\0000321}}
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, nav, section {
+    display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/reset\.scss}line{font-family:\0000324}}
+  fieldset, img {
+    border: 0 solid; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/reset\.scss}line{font-family:\0000326}}
+  [hidden] {
+    display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/reset\.scss}line{font-family:\0000330}}
+  table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/reset\.scss}line{font-family:\0000334}}
+  a:hover {
+    text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/reset\.scss}line{font-family:\0000337}}
+  a {
+    text-decoration: none; }
+
+  /*** reset browser defaults ***/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/reset\.scss}line{font-family:\0000344}}
+  input, textarea, button, select {
+    margin: 0;
+    outline: none;
+    box-shadow: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/lib\/reset\.scss}line{font-family:\0000350}}
+  input::-moz-focus-inner,
+  button::-moz-focus-inner {
+    border: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/Projects\/YiiCMS\/public_html\/p1\/scss\/src\/style\.scss}line{font-family:\000039}}
+h1 {
+  color: #DDD;
+  background: #312424;
+  padding: 20px;
+  font-size: 44px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  -moz-box-shadow: 0px 6px 16px #b8b8b8, 0px -5px 4px #b4b1b1 inset;
+  -webkit-box-shadow: 0px 6px 16px #b8b8b8, 0px -5px 4px #b4b1b1 inset;
+  box-shadow: 0px 6px 16px #b8b8b8, 0px -5px 4px #b4b1b1 inset; }

@@ -1,0 +1,62 @@
+
+    @mixin vCenter(){
+        height:inherit;
+        display:table-cell;
+        vertical-align:middle;
+    }
+
+
+
+
+	/*Commom Shorthands*/
+
+	.FL,.FLH {
+		float:left;
+		display:inline;
+	}
+	.FR,.FRH{
+		float:right;
+		display:inline;
+	}
+    .FLH,.FRH{
+            height: inherit;
+    }
+
+	.center {
+		text-align:center;
+	}
+
+	.left {
+		text-align:left;
+	}
+	.right {
+		text-align:right;
+	}
+
+        .vCenter,
+        .vBottom{
+            display:table-cell;
+            height:inherit;
+        }
+        .vCenter{
+            vertical-align:middle;
+        }
+        .vBottom{
+            vertical-align:bottom;
+        }
+
+	.fWidth{
+		width:100%;
+	}
+
+	.iWidth{
+		width:inherit ;
+	}
+
+	.iHeight{
+		height:inherit;
+	}
+
+	.none{
+		display:none !important;
+	}
