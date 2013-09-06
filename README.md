@@ -41,3 +41,6 @@ Its Not Ultimate
 ----------------
 
 it was made to quickly get started with scss in any project. and content some usefull libs, customize as you want
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dev-meghraj/scss-quickbootstrap/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
